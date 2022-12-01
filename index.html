@@ -44,7 +44,7 @@
         }
 
         .caption {
-            /* urbanizing the future of african fashion */
+        /* urbanizing the future of african fashion */
             position: absolute;
             left: 43.65%;
             right: 23.31%;
@@ -63,6 +63,220 @@
 
             color: #FFFFFF;
         }
+
+        .logo {
+        /* logo.png */
+
+            position: absolute;
+            height: 15vw;
+            left: 5.03%;
+            right: 74.67%;
+            top: calc(60% - 14rem/2 - 18rem);
+
+            background: url(logo.png);
+        }
+
+        .nav-frame {
+        /* the following css are for navigation*/
+        
+        /* the nav div */
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 1.8vw;
+
+            position: absolute;
+            width: 29rem;
+            color: white;
+            height: 1rem;
+            left: 56vw;
+            top: 8rem;
+        }
+
+        /* the nav buttons */
+        .home {
+        /* Home */
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.30vw;
+            line-height: 1.5vw;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .volunteer {
+        /* Volunteer */
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .partner {
+        /* Partnership-section */
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .contact {
+        /* contact-us */
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .about {
+        /* About-section */
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        /* social media icons */
+        .social {
+            
+        /* the icons frame */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 15px;
+
+            position: absolute;
+            left: 80vw;
+            top: 70vw;
+            background-color: aqua;
+
+            transform: rotate(90deg);
+        }
+
+        /* 632311c29a4f53a35fa38773_instagram.png */
+
+        .youtube {
+            width: 35px;
+            height: 35px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .twitter {
+            width: 35px;
+            height: 35px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .facebook {
+            width: 35px;
+            height: 35px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+
+        .instagram {
+            width: 35px;
+            height: 35px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 3;
+            flex-grow: 0;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +292,25 @@
         <p class="caption">
             Urbanizing the future of african fashion
         </p>
+
+        <img class="logo" src="Images-asset/logo.png" alt="logo of OAUFW">
+
+<!--The Nav buttons-->
+        <div class="nav-frame">
+            <p class="home">Home</p>
+            <p class="volunteer">Volunteer</p>
+            <p class="partner">Partnership</p>
+            <p class="contact">Contact us</p>
+            <p class="about">About</p>
+        </div>
+
+<!-- The social icon div -->
+        <div class="socials">
+            <img class="instagram" src="images-asset/instagram.svg" alt="instagram button">
+            <img class="facebook" src="images-asset/facebook.svg" alt="facebook button">
+            <img class="twitter" src="images-asset/twitter.svg" alt="twitter">
+            <img class="youtube" src="images-asset/youtube.svg" alt="youtube">
+        </div>
     </div>
 </body>
 </html>
