@@ -1,4 +1,4 @@
-# OAU FAshion Week
+# OAU Fashion Week
 
 the OAU fashion week is a fashion event that is designed with a focus to propagate fashion on campus and also as an avenue for student designers to promote their brand and confidence.
 
@@ -15,6 +15,7 @@ the OAU fashion week is a fashion event that is designed with a focus to propaga
 * Alex Cre& - Media coordinator
 
 ## Designer
+#### UX/UI Designer
 * Oluwatobiloba Ezekiel - UX/UI design
 #### Web Designers
 * Ikwuka Kelvin
