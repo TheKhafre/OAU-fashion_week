@@ -16,7 +16,7 @@ the OAU fashion week is a fashion event that is designed with a focus to propaga
 
 ## Designer
 #### UX/UI Designer
-* Oluwatobiloba Ezekiel - UX/UI design
+* Oluwatobiloba Ezekiel
 #### Web Designers
 * Ikwuka Kelvin
 * Oluwatobiloba Ezekiel
