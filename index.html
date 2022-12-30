@@ -234,9 +234,8 @@
       <div class="row mb60">
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">ABOUT OAUFW.</h4>
-            <p>The OAU Fashion week maiden edition will be an opportunity to celebrate students and local creatives. it will also be as an avenue to contribute to the growth of made in Nigeria fashion products.</p>
-            <p><a href="#">Read more...</a></p>
+            <h4 class="heading">OUR FOCUS:</h4>
+            <p>We are determined to help students and other local designers scale up by providing a platform and an enabling environment to promote their brand and build a lasting following.</p>
           </div> 
         </div>
         <div class="col-md-3">
@@ -266,13 +265,15 @@
         <div class="col-md-3">
           <div class="probootstrap-footer-widget probootstrap-link-wrap">
             <h4 class="heading">Join the list</h4>
-            <p>Be the first to hear from us when there i an important announcement</p>
-            <form action="mailto:the.oaufashionweek@gmail.com">
+            <p>Be the first to hear from us when there is an important announcement</p>
+
+            <form name="submit-to-google-sheet">
               <div class="form-field">
-                <input type="text" class="form-control" placeholder="Enter your email">
+                <input type="email" name="Email" class="form-control" placeholder="Enter your email">
                 <button class="btn btn-subscribe">Send</button>
               </div>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -290,6 +291,10 @@
     </div>
   </footer>
 
+  <div class="probootstrap-footer-widget probootstrap-link-wrap">
+    <h4 class="heading" style="text-align: center; ">DESIGNED AND BUILT FOR OAU FASHION WEEK. (c) 2023</h4>
+  </div>
+
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
@@ -297,6 +302,24 @@
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
 
-  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKsDgmQw0f9nEwnu8dtupAPlUxNFV9-PaJFsSHpwv7B-3fdkWG4Km9OxvCvlXKpHA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "yippee! Welcome onboard."
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },400)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
   </body>
 </html>
